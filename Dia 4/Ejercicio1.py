@@ -1,8 +1,8 @@
 import itertools
 
 def encontrar_pares(n, k, A):
-    pares = []  # Lista para almacenar los pares encontrados
-    for i, j in itertools.combinations(range(n), 2): #Lo que dijo Helen
+    pares = []  
+    for i, j in itertools.combinations(range(n), 2): 
         if (A[i] + A[j]) % k == 0: 
             par = tuple(sorted((A[i], A[j])))
             if par not in pares:
@@ -30,3 +30,5 @@ for t in range(T):
     Casos.append(len(pares))
 for z in range(0,T,1):
     print(f"Caso #{z+1}: ",Casos[z])
+
+# FRANK SEBASTIÁN ESPARZA RIAÑO - 1097789710
